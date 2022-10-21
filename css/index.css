@@ -1,6 +1,13 @@
     /* 第一 */
-    .w2 {
+    .w2-1 {
         margin: auto;
+        position: relative;
+        width: 1310px;
+
+    }
+
+    .w2 {
+        margin: 12% auto;
 
         width: 1310px;
 
@@ -1142,4 +1149,260 @@
     .list-2>ul>li>a>time {
         color: #c3c2c3;
         font-size: 20px;
+    }
+
+    .clearfix-2>li>ul {
+        position: absolute;
+        display: none;
+        font-size: 12px;
+        line-height: 30px;
+        width: 99px;
+        margin-left: -26px;
+        z-index: 3;
+        margin-top: -5px;
+        border-radius: 10px;
+        background-color: #f6f6f6ed;
+        box-shadow: 0px 0px 10px 1px rgb(0 0 0 / 15%);
+    }
+
+    .clearfix-2>li:hover ul {
+        display: block;
+    }
+
+
+    /* 九 */
+
+    .navbtn {
+        width: 50px;
+        height: 100px;
+        position: absolute;
+        transition: 0.3s;
+        margin-left: 10px;
+        /* overflow: hidden; */
+    }
+
+    /* 先把默认的状态做出来 */
+    .navbtn .topline,
+    .navbtn .bottomline,
+    .navbtn .centerline {
+        position: absolute;
+        border-top: 1px solid #9e9f9f;
+        left: 0;
+        right: 0;
+        top: 50%;
+        transition: .3s;
+        display: block;
+    }
+
+    .w1-2:hover .navbtn {
+        display: block;
+        transform: translateX(185px);
+    }
+
+    .navbtn .topline {
+        transform: translateY(-15px);
+    }
+
+    .navbtn .bottomline {
+        transform: translateY(15px);
+    }
+
+    /* 我们做经过的动画（实际上应该是点击的动画） */
+    .w1-2:hover .topline {
+        transform: translateY(0) rotate(45deg);
+    }
+
+    .w1-2:hover .bottomline {
+        transform: translateY(0) rotate(-45deg);
+    }
+
+    .w1-2:hover .centerline {
+        transform: translate(-100%, 0);
+        opacity: 0;
+    }
+
+    .wrap {
+        width: 60px;
+        height: 225px;
+        border: 0.5px solid;
+        position: fixed;
+    }
+
+    .head {
+        font-weight: bold;
+        width: 60px;
+        height: 40px;
+        background-color: white;
+        line-height: 20px;
+        /* 行高=高度 垂直居中 */
+        font-size: 14px;
+        color: #000000;
+        /* 文字颜色 白色 */
+        text-align: center;
+        /* 文本对齐方式 居中 */
+    }
+
+    .w1-2>.menu-43 {
+        transition: 0.3s;
+        position: absolute;
+        display: none;
+        font-size: 12px;
+        line-height: 30px;
+        width: 180px;
+        height: 407px;
+        top: 25px;
+        z-index: 4;
+        background-color: #e3e3e3;
+        box-shadow: inset -2px 0px 4px rgb(0 0 0 / 10%);
+    }
+
+    .w1-2:hover .menu-43 {
+        display: block;
+
+    }
+    .menu-43>li {
+        border-bottom: #dcdada solid 1px;
+        line-height: 42px;
+        padding: 0px 0px 0px 18px;
+        color: #363636;
+    }
+
+    .menu-43>li:nth-child(1) {
+        margin-top: 36px;
+    }
+
+    .menu-43>li:hover {
+        background: #fefefe;
+    }
+
+    .w1-2>.img1,
+    .w1-2>i {
+        position: absolute;
+        z-index: -3;
+        margin-left: 180px;
+        margin-top: 25px;
+    }
+
+    .w1-2>.img2 {
+        position: absolute;
+        z-index: -2;
+        margin-top: 100px;
+    }
+
+    .w1-2>i {
+        margin-left: 518px;
+        margin-top: 38px;
+        font-size: 35px;
+        color: #5a5a5a;
+    }
+
+    body {
+        position: relative;
+    }
+
+    .w1-2:hover .img1,
+    .w1-2:hover i,
+    .w1-2:hover .img2,
+    .w1-2:hover .benner {
+        transform: translateX(185px);
+    }
+
+    .iii {
+        margin-left: 250px;
+        margin-top: 225px;
+        z-index: -2;
+        position: absolute;
+    }
+
+    .iii>i {
+        width: 5px;
+        display: block;
+        height: 5px;
+        margin-left: 10px;
+        float: left;
+        border-radius: 50%;
+        background: #ff7e16;
+    }
+
+    .iii>i:nth-child(1) {
+        background: #008cff;
+    }
+
+    .w1-2,
+    .rts {
+        width: 500px;
+    }
+
+    .benner ul li {
+        float: left;
+        background-color: #2f7bd3;
+        height: 90px;
+
+    }
+
+    .benner ul {
+        display: grid;
+        /*网页布局*/
+        grid-template-columns: 1fr 1fr;
+        /*把网页分成4列（平均分配）*/
+        gap: 0px;
+        /*槽宽*/
+
+    }
+
+    .benner ul li h2:hover {
+        color: #faad1fe3;
+    }
+
+    .benner ul li h2 {
+        margin-left: 10px;
+        padding: 30px;
+        font-size: 20px;
+    }
+
+    .benner ul li p {
+        color: #ffffff99;
+        margin-left: 38px;
+        margin-top: -22px;
+        font-size: 16px;
+    }
+
+    .benner {
+        position: absolute;
+        left: 10px;
+        top: 250px;
+        z-index: -2;
+    }
+
+    .benner>ul>li:nth-child(1) {
+        border-right: #d7d7d7 solid 1px;
+        border-bottom: #d7d7d7 solid 1px;
+    }
+
+    .benner>ul>li:nth-child(2) {
+        border-bottom: #d7d7d7 solid 1px;
+    }
+
+    .benner>ul>li:nth-child(3) {
+        border-right: #d7d7d7 solid 1px;
+    }
+
+    .benner>ul>li>span {
+        position: absolute;
+        color: rgb(255, 255, 255);
+    }
+
+    .clearfix1 {
+        position: relative;
+        left: 55px;
+    }
+
+    .w1-8 {
+        /* position: absolute; */
+        margin-left: 62%;
+    }
+
+    .ts9 {
+        margin-top: -8%;
+        margin-left: -12%;
     }
